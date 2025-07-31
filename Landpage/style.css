@@ -1,0 +1,256 @@
+html {
+  scroll-behavior: smooth;
+}
+#div-home {
+  height: 600px;
+  width: 100%;
+  background-color: #141414;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  margin-left: 5%;
+}
+
+#titulo {
+  font-family: inria-serif;
+  font-size: 50pt;
+  color: white;
+}
+
+#sub-titulo {
+  font-family: inria-serif;
+  font-size: 30pt;
+  color: white;
+}
+
+#texto-home {
+  text-align: center;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+.navbar-end {
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-item {
+  color: white;
+  font-family: inria-serif;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.button {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #a30000;
+}
+
+#div-vilarejo {
+  height: 600px;
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+#div-introdução {
+  height: 600px;
+  background-color: #151515;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+#div-texto {
+  width: 500px;
+  margin: 0 0 0 20px;
+}
+
+#texto-introduçao {
+  color: white;
+  font-family: inria-serif;
+  font-size: 15pt;
+}
+
+.container-slider {
+  display: flex;
+  width: 700px;
+  min-height: 100vh;
+  align-items: center;
+  margin: 0 20px 0 0;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity 0.2s;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-button,
+#next-button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev-button {
+  transform: rotate(180deg);
+}
+
+.personagem-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: gainsboro;
+  justify-content: space-between;
+}
+
+.div-personagem {
+  display: none;
+  flex-direction: column;
+  height: 700px;
+  width: 100%;
+  background-color: gainsboro;
+}
+
+.div-personagem.active {
+  display: block;
+}
+
+.informaçao-personagem {
+}
+.div-imagem {
+  width: 400px;
+  height: 400px;
+  float: right;
+}
+.nome-personagem {
+  font-size: 60pt;
+  font-family: inria-serif;
+}
+
+.texto-personagem {
+  font-size: 30pt;
+  font-family: inria-serif;
+}
+
+.RodaPé {
+  background-color: #a30000;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Inria-Serif;
+}
+
+.RodaPé-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.RodaPéDiv1e2e3 {
+  flex: 1 200px;
+  margin: 20px;
+}
+
+.RodaPéDiv4 {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.ImagemUnity {
+  display: block;
+  margin: 0 auto;
+}
+
+.txtinf {
+  text-align: center;
+}
+
+.inria-serif-light {
+  font-family: 'Inria Serif', serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inria-serif-regular {
+  font-family: 'Inria Serif', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-serif-bold {
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inria-serif-light-italic {
+  font-family: 'Inria Serif', serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inria-serif-regular-italic {
+  font-family: 'Inria Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inria-serif-bold-italic {
+  font-family: 'Inria Serif', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+#titulo2 {
+  font-family: inria-serif;
+  font-size: 30pt;
+  color: white;
+}
