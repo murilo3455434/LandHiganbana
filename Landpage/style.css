@@ -1,37 +1,39 @@
 html {
   scroll-behavior: smooth;
 }
+
 #div-home {
   height: 600px;
   width: 100%;
   background-color: #ffffff00;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.4; /* Ajuste a opacidade conforme o desejado */
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
 }
+
 #logo {
   margin-left: 5%;
 }
 
 #titulo {
-  font-family: inria-serif;
+  font-family: Special Elite;
   font-size: 50pt;
   color: white;
 }
 
 #sub-titulo {
-  font-family: inria-serif;
+  font-family: Special Elite;
   font-size: 30pt;
   color: white;
 }
@@ -51,7 +53,7 @@ html {
 
 .navbar-item {
   color: white;
-  font-family: inria-serif;
+  font-family: Special Elite;
   font-size: 15pt;
   text-decoration: none;
 }
@@ -93,7 +95,7 @@ html {
 
 #texto-introduçao {
   color: white;
-  font-family: inria-serif;
+  font-family: Special Elite;
   font-size: 15pt;
 }
 
@@ -167,28 +169,38 @@ html {
   display: block;
 }
 
-.informaçao-personagem {
-}
+.informaçao-personagem {}
+
 .div-imagem {
   width: 400px;
   height: 400px;
   float: right;
 }
+
 .nome-personagem {
   font-size: 60pt;
-  font-family: inria-serif;
+  font-family: Special Elite;
+  margin: 20px 0 0 30px;
+  color: #151515;
+}
+
+.caixa-personagem {
+  width: 600px;
+  float: left;
+  margin: 0 0 0 30px;
 }
 
 .texto-personagem {
-  font-size: 30pt;
-  font-family: inria-serif;
+  font-size: 15pt;
+  font-family: Special Elite;
+  color: #151515;
 }
 
 .RodaPé {
   background-color: #a30000;
   color: #fff;
   padding: 40px 20px;
-  font-family: Inria-Serif;
+  font-family: Special Elite;
 }
 
 .RodaPé-container {
@@ -224,43 +236,8 @@ h3 {
   text-align: center;
 }
 
-.inria-serif-light {
-  font-family: 'Inria Serif', serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.inria-serif-regular {
-  font-family: 'Inria Serif', serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.inria-serif-bold {
-  font-family: 'Inria Serif', serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.inria-serif-light-italic {
-  font-family: 'Inria Serif', serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.inria-serif-regular-italic {
-  font-family: 'Inria Serif', serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.inria-serif-bold-italic {
-  font-family: 'Inria Serif', serif;
-  font-weight: 700;
-  font-style: italic;
-}
 #titulo2 {
-  font-family: inria-serif;
+  font-family: Special Elite;
   font-size: 30pt;
   color: white;
 }
