@@ -4,11 +4,21 @@ html {
 #div-home {
   height: 600px;
   width: 100%;
-  background-color: #141414;
+  background-color: #ffffff00;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.4; /* Ajuste a opacidade conforme o desejado */
 }
 #logo {
   margin-left: 5%;
