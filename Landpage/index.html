@@ -11,20 +11,24 @@
 
 <body >
 
-    <div class="scroll" data-scroll-container>
-    <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #111111;">
+    <div>
+
+    <nav class="navbar" id="navbar1" role="navigation" aria-label="main navigation" style="background-color: #111111e8;">
         <div class="navbar-brand">
             <img id="logo" src="./images/Icone_Higanbana_semFundo.png" alt="logo" width="65">
         </div>
 
-        <div class="navbar-end">
-            <a class="navbar-item" href="#div-introdução"
-                style="font-family: Special Elite; color: #ffffff; font-size: 15pt;">História</a>
-            <a class="navbar-item" href="#Personagens"
-                style="font-family: Special Elite; color: #ffffff; font-size: 15pt;">Personagens</a>
-            <a class="navbar-item" href="#div-vilarejo"
-                style="font-family: Special Elite; color: #ffffff; font-size: 15pt;">Vilarejo</a>
-            
+        <div class="navbar-end">   
+               <button class="botoes-Inicio" >
+                  <a href="#div-introdução">Introdução</a>
+               </button>
+                <button class="botoes-Inicio2">
+                  <a href="#Personagens">Personagens</a>
+               </button>
+               <button class="botoes-Inicio3">
+                  <a href="#div-vilarejo">Vilarejo</a>
+               </button>
+    
         </div>
     </nav>
 
@@ -35,13 +39,7 @@
         </video>
 
         <div id="texto-home">
-            <h1 id="titulo"
-            data-scroll 
-            data-scroll-speed="1"
-            data-scroll-position="top"
-            data-scroll-direction="horizontal"
-
-            >Higanbana</h1>
+            <h1 id="titulo">Higanbana</h1>
             <h1 id="sub-titulo">Um jogo de mistério e suspense</h1>
             <button class="button is-danger is-dark"
                 style="font-family: Special Elite; height: 70px; width: 150px; font-size: 15pt; margin-top: 3%;">Jogue
@@ -71,102 +69,9 @@
             <button id="next-button"><img src="./images/arrow.png" alt="next-button"></button>
         </div>
     </div>
-    <div id="Personagens" class="personagem-container" data-scroll-container>
 
-        <button style="transform: rotate(180deg);  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;" id="prevPersonagem"><img src="./images/arrow.png" /></button>
-
-
-        <div class="div-personagem" id="div-personagem1">
-            <div class="informaçao-personagem">
-                <p class="nome-personagem">Thiago José Fritz</p>
-                <div class="caixa-personagem">
-                    <h1 class="texto-personagem">Thiago é o que podemo chamar de CLT médio. nasceu em uma capital. desde
-                        criança sempre gostou de entender e desvendar todo tipo de mistério. Essa
-                        curiosidade provavelmente foi fruto de conviver com seu pai, que por anos
-                        durante a infância de Thiago, foi cientista forense.
-                        Entender provas e dados se tornou a paixáo do jovem Fritz. Sua carisma e
-                        otimismo vieram de sua mae, uma ótima psiquiatra que sempre o fez enxergar
-                        que o copo que está vazio ao menos não vai transbordar.
-                        Seus esforços e dedicação formaram seu currículo com dois anos de estágio em
-                        um jornal local e formaçdo em jornalismo em uma faculdade bem reconhecida.</h1>
-                </div>
-            </div>
-            <div class="div-imagem">
-                <img src="./images/sketch 1-Thiago.png" alt="">
-            </div>
-        </div>
-
-        <div class="div-personagem" id="div-personagem2">
-            <div class="informaçao-personagem">
-                <p class="nome-personagem">Jhonatan Pinto Da Silva</p>
-                <div class="caixa-personagem">
-                    <h1 class="texto-personagem">Esse jornalista de meia tigela não lutou para conseguir nada
-                        do que tem, seu cargo, faculdade ou carro. Um filhinho de
-                        papai que se considera O protagonista em qualquer
-                        situação,
-                        Faz tudo quando e como quer, não curte ouvir opiniões e
-                        odeia lembrar que Thiago José Fritz, alguém mais novo e do
-                        que ele considera a "Ralé" da sociedade, tem um cargo
-                        acima do seu.
-                        Jhonatan é claramente mimado e alguns do grupo de
-                        jornalistas chegam a se perguntar como conseguiu 0 cargo
-                        na empresa, algumas pistas indicam que foi por seu tio ser
-                        colega de Raimundo de Andrade.</h1>
-                </div>
-            </div>
-        </div>
-        <div class="div-personagem" id="div-personagem3">
-            <div class="informaçao-personagem">
-                <p class="nome-personagem">Nome3</p>
-                <div class="caixa-personagem">
-                    <h1 class="texto-personagem">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into electronic typesetting, remaining
-                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                        PageMaker including versions of Lorem Ipsum.</h1>
-                </div>
-            </div>
-        </div>
-        <div class="div-personagem" id="div-personagem4">
-            <div class="informaçao-personagem">
-                <p class="nome-personagem">Nome4</p>
-                <div class="caixa-personagem">
-                    <h1 class="texto-personagem">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into electronic typesetting, remaining
-                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                        PageMaker including versions of Lorem Ipsum.</h1>
-                </div>
-            </div>
-        </div>
-        <div class="div-personagem" id="div-personagem5">
-            <div class="informaçao-personagem">
-                <p class="nome-personagem">Nome5</p>
-                <div class="caixa-personagem">
-                    <h1 class="texto-personagem">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                        survived not only five centuries, but also the leap into electronic typesetting, remaining
-                        essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-                        PageMaker including versions of Lorem Ipsum.</h1>
-                </div>
-            </div>
-        </div>
-
-        <button style="width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;" id="nextPersonagem"><img src="./images/arrow.png" /></button>
+    <div id="Personagens" class="personagem-container">
+       
     </div>
 
     <div id="div-vilarejo">
@@ -209,8 +114,7 @@
             </div>
         </div>
         <div class="RodaPéDiv4">
-            <img src="images/Unity.png" alt="Imagem Unity" width="150">
-            <img src="images/14.png" alt="Imagem Unity" width="50">
+            
         </div>
     </footer>
 </div>

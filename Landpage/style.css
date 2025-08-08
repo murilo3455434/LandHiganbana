@@ -1,18 +1,12 @@
 html {
-   scroll-behavior: smooth;
    max-height: 100%;
    max-width: 100%;
+  
 }
-.scroll {
-  margin: 0;
-  max-width: 100%;
-  width: 100%;
-  max-height: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  background-color: #111111;
-}
+#navbar1 {
+   height: 70px;
 
+}
 #div-home {
   height: 600px;
   max-width: 100%;
@@ -64,7 +58,7 @@ html {
   gap: 20px;
 }
 
-.navbar-item {
+#navbar-item {
   color: white;
   font-family: Special Elite;
   font-size: 15pt;
@@ -93,8 +87,8 @@ html {
 }
 
 #div-introdução {
-  min-height: 100vh;
-  height: 600px;
+  min-height: auto;
+  height: 750px;
   background-color: #151515;
   display: flex;
   align-items: center;
@@ -102,6 +96,194 @@ html {
   padding: 5rem;
 }
 
+.botoes-Inicio {
+  padding: 1rem;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Special Elite;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.botoes-Inicio {
+  --primary-color: #ffffff;
+  --hovered-color: #b80c0c;
+  position: relative;
+  display: flex;
+  font-weight: 550;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.botoes-Inicio a {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.botoes-Inicio::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -0px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.2s ease-out;
+}
+
+.botoes-Inicio a::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Introdução";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  height: auto;
+  font-family: Special Elite;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.botoes-Inicio:hover::after {
+  width: 100%;
+}
+
+.botoes-Inicio:hover a::before {
+  width: 100%;
+}
+
+.botoes-Inicio2 {
+  padding: 1rem;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Special Elite;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.botoes-Inicio2 {
+  --primary-color: #ffffff;
+  --hovered-color: #b80c0c;
+  position: relative;
+  display: flex;
+  font-weight: 550;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.botoes-Inicio2 a {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.botoes-Inicio2::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -0px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.2s ease-out;
+}
+
+.botoes-Inicio2 a::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Personagens";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  height: auto;
+  font-family: Special Elite;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.botoes-Inicio2:hover::after {
+  width: 100%;
+}
+
+.botoes-Inicio2:hover a::before {
+  width: 100%;
+}
+
+.botoes-Inicio3 {
+  padding: 1rem;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Special Elite;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.botoes-Inicio3 {
+  --primary-color: #ffffff;
+  --hovered-color: #b80c0c;
+  position: relative;
+  display: flex;
+  font-weight: 550;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.botoes-Inicio3 a {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.botoes-Inicio3::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -0px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.2s ease-out;
+}
+
+.botoes-Inicio3 a::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Vilarejo";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  height: auto;
+  font-family: Special Elite;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.botoes-Inicio3:hover::after {
+  width: 100%;
+}
+
+.botoes-Inicio3:hover a::before {
+  width: 100%;
+}
 
 #div-texto {
   width: 500px;
