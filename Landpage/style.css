@@ -3,9 +3,36 @@ html {
    max-width: 100%;
   
 }
+<<<<<<< HEAD
 #navbar1 {
    height: 70px;
 
+=======
+::-webkit-scrollbar {
+  width: 9px;
+  height: 2px;
+}
+
+
+::-webkit-scrollbar-track {
+  width: 100px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff000052;
+  border-radius: 10px;
+  
+}
+#link-topo{
+  text-decoration: none;
+  color: white;
+  background-color: #a30000;
+  padding: 9px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 3px 3px 10px #333;
+>>>>>>> 9999c3b1977eb816bab65b24379ea70eb4dbb97f
 }
 #div-home {
   height: 600px;
@@ -86,9 +113,15 @@ html {
   padding: 5rem;
 }
 
+<<<<<<< HEAD
 #div-introdução {
   min-height: auto;
   height: 750px;
+=======
+#div-introduçao {
+  min-height: 100vh;
+  height: 600px;
+>>>>>>> 9999c3b1977eb816bab65b24379ea70eb4dbb97f
   background-color: #151515;
   display: flex;
   align-items: center;
