@@ -297,8 +297,8 @@ html {
 }
 
 #div-introduçao {
-  min-height: 100vh;
-  height: 600px;
+  
+  height: 700px;
   background-color: #151515;
   display: flex;
   align-items: center;
@@ -367,13 +367,108 @@ html {
   transform: rotate(180deg);
 }
 
+
+/* Container geral */
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+/* Linhas de cards */
+.linha {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.linha1 {
+  justify-content: center;
+}
+
+.linha2 {
+  justify-content: center;
+}
+
+/* Card do Uiverse.io ajustado */
+.card {
+  width: 370px;
+  height: 304px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  position: relative; /* necessário para o botão */
+  box-sizing: border-box;
+}
+
+/* Conteúdo do card */
+.card-details {
+  color: rgb(0, 0, 0);
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.text-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Special Elite', cursive;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/* Botão do card */
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #c50000;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+/* Hover nos cards */
+.card:hover {
+  border-color: #b80000;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+/* Se você usar imagem dentro de .div-imagem */
+.div-imagem {
+  width: 220px;
+  max-width: 205px;
+  height: 70px;
+  margin-left: 3px;
+  margin-top: 4px;
+}
+
+/* Se você for usar em outro lugar */
 .personagem-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
   background-color: gainsboro;
-  justify-content: space-between;
+  flex-direction: column;
+  flex: 1;
 }
 
 .div-personagem {
@@ -390,15 +485,11 @@ html {
 
 .informaçao-personagem {}
 
-.div-imagem {
-  width: 400px;
-  height: 400px;
-  float: right;
-}
+
 
 .nome-personagem {
   font-size: 60pt;
-  font-family: Special Elite;
+  
   margin: 20px 0 0 30px;
   color: #151515;
 }
@@ -446,10 +537,6 @@ h3 {
   text-align: center;
 }
 
-.ImagemUnity {
-  display: block;
-  margin: 0 auto;
-}
 
 .txtinf {
   text-align: center;
