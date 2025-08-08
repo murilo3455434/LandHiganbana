@@ -42,6 +42,31 @@ function Personagem(n){
   window.location.href = "http://127.0.0.1:5500/Landpage/Personagem.html?"+n;
 }
 
+let currentSlide = 0;
+
+function hideSlider() {
+  slider.forEach(item => item.classList.remove('on'));
+}
+
+function showSlider() {
+  slider[currentSlide].classList.add('on');
+}
+
+function nextSlider() {
+  hideSlider();
+  currentSlide = (currentSlide + 1) % slider.length;
+  showSlider();
+}
+
+function prevSlider() {
+  hideSlider();
+  currentSlide = (currentSlide - 1 + slider.length) % slider.length;
+  showSlider();
+}
+
+btnNext.addEventListener('click', nextSlider);
+btnPrev.addEventListener('click', prevSlider);
+
 
 const personagens = document.querySelectorAll('.div-personagem');
 const btnNextPer = document.getElementById('nextPersonagem');
@@ -59,3 +84,13 @@ function mostrarPersonagem() {
 }
 
 mostrarPersonagem();
+
+btnNextPer.addEventListener('click', () => {
+  index = (index + 1) % personagens.length;
+  mostrarPersonagem();
+});
+
+btnPrevPer.addEventListener('click', () => {
+  index = (index - 1 + personagens.length) % personagens.length;
+  mostrarPersonagem();
+});
