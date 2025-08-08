@@ -1,12 +1,46 @@
-
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
+const href = window.location.href;
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
+function IndexPer() {
+
+  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?1") {
+    const nome = document.getElementsByClassName("nome-personagem")[0];
+    if (nome) {
+      nome.innerText = "Thiago José Fritz";
+    }
+  }
+  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?2") {
+    const nome = document.getElementsByClassName("nome-personagem")[0];
+    if (nome) {
+      nome.innerText = "Jhonatan Pinto Da Silva";
+    }
+  }
+  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?3") {
+    const nome = document.getElementsByClassName("nome-personagem")[0];
+    if (nome) {
+      nome.innerText = "Personagem 2";
+    }
+  }
+  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?4") {
+    const nome = document.getElementsByClassName("nome-personagem")[0];
+    if (nome) {
+      nome.innerText = "Personagem 3";
+    }
+  }
+  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?5") {
+    const nome = document.getElementsByClassName("nome-personagem")[0];
+    if (nome) {
+      nome.innerText = "Personagem 4";
+    }
+  }
+ 
+}
+
+function Personagem(n){
+  window.location.href = "http://127.0.0.1:5500/Landpage/Personagem.html?"+n;
+}
 
 let currentSlide = 0;
 

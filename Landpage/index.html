@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <a id="link-topo" href="#">&#9650;</a>
-
-    <div class="scroll" data-scroll-container>
-    <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #111111;">
+    
+<div class="scroll-area">
+        <a id="link-topo" href="#">&#9650;</a>
+     <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #111111;">
         <div class="navbar-brand">
             <img id="logo" src="./images/Icone_Higanbana_semFundo.png" alt="logo" width="65">
         </div>
 
         <div class="navbar-end">
-            <a class="navbar-item" href="#div-introdução"
+            <a class="navbar-item" href="#div-introduçao"
                 style="font-family: Special Elite; color: #ffffff; font-size: 15pt;">História</a>
             <a class="navbar-item" href="#Personagens"
                 style="font-family: Special Elite; color: #ffffff; font-size: 15pt;">Personagens</a>
@@ -27,9 +27,9 @@
                 style="font-family: Special Elite; color: #ffffff; font-size: 15pt;">Vilarejo</a>
             
         </div>
-    </nav>
+     </nav>
 
-    <div  id="div-home">
+     <div  id="div-home">
         <video autoplay muted loop playsinline id="background-video">
             <source src="images/Movie_006.webm" type="video/webm">
 
@@ -48,10 +48,10 @@
                 style="font-family: Special Elite; height: 70px; width: 150px; font-size: 15pt; margin-top: 3%;">Jogue
                 Agora</button>
         </div>
-    </div>
+     </div>
 
 
-    <div id="div-introdução">
+     <div id="div-introduçao">
         <div id="div-texto">
             <h1 id="titulo2">História</h1>
             <h1 id="texto-introduçao">O jogo conta a história de um jornalista investigativo que busca uma reportagem
@@ -71,14 +71,14 @@
             </div>
             <button id="next-button"><img src="./images/arrow.png" alt="next-button"></button>
         </div>
-    </div>
-    <div id="Personagens" class="personagem-container" data-scroll-container>
+     </div>
+     <div id="Personagens" class="personagem-container" >
 
         <button style="transform: rotate(180deg);  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;" id="prevPersonagem"><img src="./images/arrow.png" /></button>
+     height: 30px;
+     border: none;
+     background-color: transparent;
+     cursor: pointer;" id="prevPersonagem"><img src="./images/arrow.png" /></button>
 
 
         <div class="div-personagem" id="div-personagem1">
@@ -100,7 +100,11 @@
                 <img src="./images/sketch 1-Thiago.png" alt="">
             </div>
         </div>
-
+<button onclick="Personagem(1)">clique aqui</button>
+<button onclick="Personagem(2)">clique aqui</button>
+<button onclick="Personagem(3)">clique aqui</button>
+<button onclick="Personagem(4)">clique aqui</button>
+<button onclick="Personagem(5)">clique aqui</button>
         <div class="div-personagem" id="div-personagem2">
             <div class="informaçao-personagem">
                 <p class="nome-personagem">Jhonatan Pinto Da Silva</p>
@@ -164,13 +168,13 @@
         </div>
 
         <button style="width: 30px;
-  height: 30px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;" id="nextPersonagem"><img src="./images/arrow.png" /></button>
-    </div>
+     height: 30px;
+     border: none;
+     background-color: transparent;
+     cursor: pointer;" id="nextPersonagem"><img src="./images/arrow.png" /></button>
+     </div>
 
-    <div id="div-vilarejo">
+     <div id="div-vilarejo">
 
         <div id="div-texto">
             <h1 id="titulo2">Vilarejo</h1>
@@ -186,9 +190,9 @@
         <div class="container-slider">
             <img style="border-radius: 10px;" src="images/Captura de tela 2025-08-01 103810.png" alt="">
         </div>
-    </div>
+     </div>
 
-    <footer class="RodaPé" >
+     <footer class="RodaPé" >
         <div class="RodaPé-container">
             <div class="RodaPéDiv1e2e3">
                 <h3>Politica de Privacidade</h3>
@@ -213,8 +217,8 @@
             <img src="images/Unity.png" alt="Imagem Unity" width="150">
             <img src="images/14.png" alt="Imagem Unity" width="50">
         </div>
-    </footer>
-</div>
+     </footer>
+</div>  
 </body>
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
