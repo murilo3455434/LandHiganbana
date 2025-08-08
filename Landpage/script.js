@@ -7,7 +7,7 @@ const Historia = document.getElementsByClassName("texto-personagem")[0];
 
 function IndexPer() {
   const params = new URLSearchParams(window.location.search);
-  const personagemID = params.get('');
+  const personagemID = params.get('id');
 
   if (!personagemID) return;
 
@@ -52,7 +52,7 @@ function IndexPer() {
 
 
 function Personagem(n){
-  window.location.href = "http://127.0.0.1:5500/Landpage/personagem.html?"+n;
+  window.location.href = "http://127.0.0.1:5500/Landpage/personagem.html?id"+n;
 }
 
 function Voltar(){
