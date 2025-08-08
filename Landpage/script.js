@@ -3,8 +3,6 @@ const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
 const href = window.location.href;
 
-<<<<<<< HEAD
-=======
 function IndexPer() {
 
   if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?1") {
@@ -43,7 +41,6 @@ function IndexPer() {
 function Personagem(n){
   window.location.href = "http://127.0.0.1:5500/Landpage/Personagem.html?"+n;
 }
->>>>>>> 9999c3b1977eb816bab65b24379ea70eb4dbb97f
 
 let currentSlide = 0;
 
