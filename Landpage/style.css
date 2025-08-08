@@ -71,7 +71,7 @@ html {
 .botoes-Inicio a::before {
   position: absolute;
   /*   box-sizing: border-box; */
-  content: "Introdução";
+  content: "Voltar";
   width: 0%;
   inset: 0;
   color: var(--hovered-color);
@@ -488,10 +488,10 @@ html {
 
 
 .nome-personagem {
-  font-size: 60pt;
-  
+  font-size: 40pt;
+  font-family: Special Elite;
   margin: 20px 0 0 30px;
-  color: #151515;
+  color: #a10202;
 }
 
 .caixa-personagem {
@@ -503,7 +503,20 @@ html {
 .texto-personagem {
   font-size: 15pt;
   font-family: Special Elite;
-  color: #151515;
+  color: #ffffff;
+  margin: 10px 0 0 30px;
+}
+#divpag{
+  width: 600px;
+  height: 600px;
+  margin: 0 0 0 20px;
+  float: left;
+}
+#imagepers{
+  width: 400px;
+  height: 400px;
+  float:right;
+  margin: 90px 30px 0 0;
 }
 
 .RodaPé {

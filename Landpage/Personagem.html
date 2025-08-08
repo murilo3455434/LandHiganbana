@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body onload="IndexPer()">
-    <div class="div-personagem" id="div-personagem1">
-            <div class="informaçao-personagem">
-                <p class="nome-personagem"></p>
-                <div class="caixa-personagem">
-                    <h1 class="texto-personagem">Thiago é o que podemo chamar de CLT médio. nasceu em uma capital. desde
-                        criança sempre gostou de entender e desvendar todo tipo de mistério. Essa
-                        curiosidade provavelmente foi fruto de conviver com seu pai, que por anos
-                        durante a infância de Thiago, foi cientista forense.
-                        Entender provas e dados se tornou a paixáo do jovem Fritz. Sua carisma e
-                        otimismo vieram de sua mae, uma ótima psiquiatra que sempre o fez enxergar
-                        que o copo que está vazio ao menos não vai transbordar.
-                        Seus esforços e dedicação formaram seu currículo com dois anos de estágio em
-                        um jornal local e formaçdo em jornalismo em uma faculdade bem reconhecida.</h1>
-                </div>
-            </div>
-            <div class="div-imagem">
-                <img src="./images/sketch 1-Thiago.png" alt="">
-            </div>
+
+    <nav class="navbar"
+        style="background-color: #111111; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <div class="navbar-start"></div>
+        <div class="navbar-end" style="display: flex; align-items: center; gap: 10px;">
+            <button class="botoes-Inicio" style="padding: 5px 10px; margin:0 1300px 0 0;">
+                <a href="#" onclick="Voltar()" style="text-decoration: none; color: white; ">Voltar</a>
+            </button>
+            <img id="logo" src="./images/Icone_Higanbana_semFundo.png" alt="logo" width="65">
         </div>
+    </nav>
+
+    <div id="divpag">
+        <p class="nome-personagem"></p>
+        <h1 class="texto-personagem"></h1>
+    </div>
+    <div id="imagepers">
+    <img src="" id="Imageper" alt="">
+    </div>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
     <script src="script.js"></script>
 </body>
+
 </html>
