@@ -7,7 +7,7 @@ const Historia = document.getElementsByClassName("texto-personagem")[0];
 
 function IndexPer() {
 
-  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?1") {
+  if (href === "http://127.0.0.1:5500/Landpage/personagem.html?1") {
     
     
     if (nome) {
@@ -17,7 +17,7 @@ function IndexPer() {
     }
   }
 
-  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?2") {
+  if (href === "http://127.0.0.1:5500/Landpage/personagem.html?2") {
     const nome = document.getElementsByClassName("nome-personagem")[0];
     if (nome) {
       nome.innerText = "Jhonatan Pinto Da Silva";
@@ -26,7 +26,7 @@ function IndexPer() {
     }
   }
 
-  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?3") {
+  if (href === "http://127.0.0.1:5500/Landpage/personagem.html?3") {
     const nome = document.getElementsByClassName("nome-personagem")[0];
     if (nome) {
       nome.innerText = "Personagem 2";
@@ -35,7 +35,7 @@ function IndexPer() {
     }
   }
 
-  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?4") {
+  if (href === "http://127.0.0.1:5500/Landpage/personagem.html?4") {
     const nome = document.getElementsByClassName("nome-personagem")[0];
     if (nome) {
       nome.innerText = "Personagem 3";
@@ -44,7 +44,7 @@ function IndexPer() {
     }
   }
 
-  if (href === "http://127.0.0.1:5500/Landpage/Personagem.html?5") {
+  if (href === "http://127.0.0.1:5500/Landpage/personagem.html?5") {
     const nome = document.getElementsByClassName("nome-personagem")[0];
     if (nome) {
       nome.innerText = "Personagem 4";
@@ -56,13 +56,13 @@ function IndexPer() {
 }
 
 function Personagem(n){
-  window.location.href = "http://127.0.0.1:5500/Landpage/Personagem.html?"+n;
+  window.location.href = "http://127.0.0.1:5500/Landpage/personagem.html?"+n;
 }
-<<<<<<< HEAD
+
 function Voltar(){
   window.location.href = "http://127.0.0.1:5500/Landpage/index.html#";
 }
-=======
+
 
 let currentSlide = 0;
 
@@ -89,8 +89,6 @@ function prevSlider() {
 btnNext.addEventListener('click', nextSlider);
 btnPrev.addEventListener('click', prevSlider);
 
-
->>>>>>> af317fced414a8c1d9063d882f468e1d91228672
 const personagens = document.querySelectorAll('.div-personagem');
 const btnNextPer = document.getElementById('nextPersonagem');
 const btnPrevPer = document.getElementById('prevPersonagem');

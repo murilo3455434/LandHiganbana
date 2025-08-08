@@ -6,178 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Higanbana</title>
     <link rel="stylesheet" href="style.css">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'/>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css' />
 </head>
 
 <body>
-    
-<div class="scroll-area">
+
+    <div class="scroll-area">
         <a id="link-topo" href="#">&#9650;</a>
 
-     <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #111111;">
-        <div class="navbar-brand">
-            <img id="logo" src="./images/Icone_Higanbana_semFundo.png" alt="logo" width="65">
-        </div>
+        <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #111111;">
+            <div class="navbar-brand">
+                <img id="logo" src="./images/Icone_Higanbana_semFundo.png" alt="logo" width="65">
+            </div>
 
-        <div class="navbar-end">   
-               <button class="botoes-Inicio" >
-                  <a href="#div-introduçao">Introdução</a>
-               </button>
+            <div class="navbar-end">
+                <button class="botoes-Inicio">
+                    <a href="#div-introduçao">Introdução</a>
+                </button>
                 <button class="botoes-Inicio2">
-                  <a href="#Personagens">Personagens</a>
-               </button>
-               <button class="botoes-Inicio3">
-                  <a href="#div-vilarejo">Vilarejo</a>
-               </button>
-    
-        </div>
-     </nav>
+                    <a href="#Personagens">Personagens</a>
+                </button>
+                <button class="botoes-Inicio3">
+                    <a href="#div-vilarejo">Vilarejo</a>
+                </button>
 
-     <div  id="div-home">
-        <video autoplay muted loop playsinline id="background-video">
-            <source src="images/Movie_006.webm" type="video/webm">
-
-        </video>
-
-        <div id="texto-home">
-            <h1 id="titulo">Higanbana</h1>
-            <h1 id="sub-titulo">Um jogo de mistério e suspense</h1>
-            <button class="button is-danger is-dark"
-                style="font-family: Special Elite; height: 70px; width: 150px; font-size: 15pt; margin-top: 3%;">Jogue
-                Agora</button>
-        </div>
-     </div>
-
-
-     <div id="div-introduçao">
-        <div id="div-texto">
-            <h1 id="titulo2">História</h1>
-            <h1 id="texto-introduçao">O jogo conta a história de um jornalista investigativo que busca uma reportagem
-                que definirá o futuro de sua carreira. O objetivo do jogo não é apenas entreter o jogador, mas também
-                apresentar uma moral final e críticas, como, por exemplo, à insalubridade de algumas cidades e vilarejos
-                no Brasil, muitas vezes causada pela falta de atenção do governos. Além disso, em muitas empresas vemos
-                trabalhadores desempenhando funções para as quais não têm a competência necessária. Isso provoca
-                desconforto e, dependendo do serviço, representa risco à vida do trabalhador..
-
-            </h1>
-        </div>
-        <div class="container-slider">
-            <button id="prev-button"><img src="./images/arrow.png" alt="prev-button"></button>
-            <div class="container-images">
-                <img class="slider on" src="images/Captura de tela 2025-07-31 214556.png" alt="">
-                <img class="slider" src="images/Captura de tela 2025-07-31 214837.png" alt="">
             </div>
-            <button id="next-button"><img src="./images/arrow.png" alt="next-button"></button>
-        </div>
-     </div>
+        </nav>
 
+        <div id="div-home">
+            <video autoplay muted loop playsinline id="background-video">
+                <source src="images/Movie_006.webm" type="video/webm">
 
+            </video>
 
-
-
-     <div id="Personagens" class="personagem-container">
-<div class="linha linha1"> <!-- 3 cards aqui -->
-        <div class="card">
-             <div class="div-imagem">
-                <img src="./images/sketch 1-Thiago.png" alt="">
-            </div>
-  <div class="card-details">
-    <p class="text-title">Thiago José Fritz</p>
-    <p class="text-body">Here are the details of the card</p>
-  </div>
-  <button class="card-button" onclick="Personagem(1)">Saiba mais</button>
-</div>
-
-<div class="card">
-             <div class="div-imagem">
-                <img src="./images/sketch 1-Thiago.png" alt="">
-            </div>
-  <div class="card-details">
-    <p class="text-title">Jhonatan Pinto Da Silva</p>
-    <p class="text-body">Here are the details of the card</p>
-  </div>
-  <button onclick="Personagem(2)" class="card-button">Saiba mais</button>
-</div>
-<div class="card">
-             <div class="div-imagem">
-                <img src="./images/sketch 1-Thiago.png" alt="">
-            </div>
-  <div class="card-details">
-    <p class="text-title">Thiago José Fritz</p>
-    <p class="text-body">Here are the details of the card</p>
-  </div>
-  <button class="card-button" onclick="Personagem(3)">Saiba mais</button>
-</div>
-</div>
-
-
-<div class="linha linha2"> <!-- 2 cards aqui -->
-<div class="card">
-             <div class="div-imagem">
-                <img src="./images/sketch 1-Thiago.png" alt="">
-            </div>
-  <div class="card-details">
-    <p class="text-title">Thiago José Fritz</p>
-    <p class="text-body">Here are the details of the card</p>
-  </div>
-  <button class="card-button" onclick="Personagem(4)">Saiba mais</button>
-</div>
-<div class="card">
-             <div class="div-imagem">
-                <img src="./images/sketch 1-Thiago.png" alt="">
-            </div>
-  <div class="card-details">
-    <p class="text-title">Thiago José Fritz</p>
-    <p class="text-body">Here are the details of the card</p>
-  </div>
-  <button class="card-button" onclick="Personagem(5)">Saiba mais</button>
-</div>
-</div>  
-</div>      
-     <div id="div-vilarejo">
-
-        <div id="div-texto">
-            <h1 id="titulo2">Vilarejo</h1>
-            <h1 id="texto-introduçao">O jogo conta a história de um jornalista investigativo que busca uma reportagem
-                que definirá o futuro de sua carreira. O objetivo do jogo não é apenas entreter o jogador, mas também
-                apresentar uma moral final e críticas, como, por exemplo, à insalubridade de algumas cidades e vilarejos
-                no Brasil, muitas vezes causada pela falta de atenção do governos. Além disso, em muitas empresas vemos
-                trabalhadores desempenhando funções para as quais não têm a competência necessária. Isso provoca
-                desconforto e, dependendo do serviço, representa risco à vida do trabalhador..
-
-            </h1>
-        </div>
-        <div class="container-slider">
-            <img style="border-radius: 10px;" src="images/Captura de tela 2025-08-01 103810.png" alt="">
-        </div>
-     </div>
-
-     <footer class="RodaPé" >
-        <div class="RodaPé-container">
-            <div class="RodaPéDiv1e2e3">
-                <h3>Politica de Privacidade</h3>
-            </div>
-            <div class="RodaPéDiv1e2e3">
-                <h3>Termos de Serviço</h3>
-            </div>
-            <div class="RodaPéDiv1e2e3">
-                <h3>Contato</h3>
-            </div>
-            <div class="RodaPéDiv1e2e3">
-                <h3>Informação do Consumidor</h3>
-            </div>
-            <div class="ImagemUnity">
-                <p class="txtinf">
-                    © 2025 Higanbana, Higanbana, HIGANBANA e todos os logotipos associados são marcas comerciais,
-                    marcas de serviço e/ou marcas registradas da Higanbana.
-                </p>
+            <div id="texto-home">
+                <h1 id="titulo">Higanbana</h1>
+                <h1 id="sub-titulo">Um jogo de mistério e suspense</h1>
+                <button class="button is-danger is-dark"
+                    style="font-family: Special Elite; height: 70px; width: 150px; font-size: 15pt; margin-top: 3%;">Jogue
+                    Agora</button>
             </div>
         </div>
-        <div class="RodaPéDiv4">
 
+
+        <div id="div-introduçao">
+            <div id="div-texto">
+                <h1 id="titulo2">História</h1>
+                <h1 id="texto-introduçao">O jogo conta a história de um jornalista investigativo que busca uma
+                    reportagem
+                    que definirá o futuro de sua carreira. O objetivo do jogo não é apenas entreter o jogador, mas
+                    também
+                    apresentar uma moral final e críticas, como, por exemplo, à insalubridade de algumas cidades e
+                    vilarejos
+                    no Brasil, muitas vezes causada pela falta de atenção do governos. Além disso, em muitas empresas
+                    vemos
+                    trabalhadores desempenhando funções para as quais não têm a competência necessária. Isso provoca
+                    desconforto e, dependendo do serviço, representa risco à vida do trabalhador..
+
+                </h1>
+            </div>
+            <div class="container-slider">
+                <button id="prev-button"><img src="./images/arrow.png" alt="prev-button"></button>
+                <div class="container-images">
+                    <img class="slider on" src="images/Captura de tela 2025-07-31 214556.png" alt="">
+                    <img class="slider" src="images/Captura de tela 2025-07-31 214837.png" alt="">
+                </div>
+                <button id="next-button"><img src="./images/arrow.png" alt="next-button"></button>
+            </div>
         </div>
-     </footer>
-</div>  
+
+        <div id="Personagens" class="personagem-container">
+
+            <div class="linha linha1"> <!-- 3 cards aqui -->
+                <div class="card">
+                    <div class="div-imagem">
+                        <img src="./images/sketch 1-Thiago.png" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="text-title">Thiago José Fritz</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button" onclick="Personagem(1)">Saiba mais</button>
+                </div>
+
+                <div class="card">
+                    <div class="div-imagem">
+                        <img src="./images/sketch 1-Thiago.png" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="text-title">Jhonatan Pinto Da Silva</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button onclick="Personagem(2)" class="card-button">Saiba mais</button>
+                </div>
+                <div class="card">
+                    <div class="div-imagem">
+                        <img src="./images/sketch 1-Thiago.png" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="text-title">Thiago José Fritz</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button" onclick="Personagem(3)">Saiba mais</button>
+                </div>
+            </div>
+
+
+            <div class="linha linha2">
+                <div class="card">
+                    <div class="div-imagem">
+                        <img src="./images/sketch 1-Thiago.png" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="text-title">Thiago José Fritz</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button" onclick="Personagem(4)">Saiba mais</button>
+                </div>
+                <div class="card">
+                    <div class="div-imagem">
+                        <img src="./images/sketch 1-Thiago.png" alt="">
+                    </div>
+                    <div class="card-details">
+                        <p class="text-title">Thiago José Fritz</p>
+                        <p class="text-body">Here are the details of the card</p>
+                    </div>
+                    <button class="card-button" onclick="Personagem(5)">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+        <div id="div-vilarejo">
+
+            <div id="div-texto">
+                <h1 id="titulo2">Vilarejo</h1>
+                <h1 id="texto-introduçao">O jogo conta a história de um jornalista investigativo que busca uma
+                    reportagem
+                    que definirá o futuro de sua carreira. O objetivo do jogo não é apenas entreter o jogador, mas
+                    também
+                    apresentar uma moral final e críticas, como, por exemplo, à insalubridade de algumas cidades e
+                    vilarejos
+                    no Brasil, muitas vezes causada pela falta de atenção do governos. Além disso, em muitas empresas
+                    vemos
+                    trabalhadores desempenhando funções para as quais não têm a competência necessária. Isso provoca
+                    desconforto e, dependendo do serviço, representa risco à vida do trabalhador..
+
+                </h1>
+            </div>
+            <div class="container-slider">
+                <img style="border-radius: 10px;" src="images/Captura de tela 2025-08-01 103810.png" alt="">
+            </div>
+        </div>
+
+        <footer class="RodaPé">
+            <div class="RodaPé-container">
+                <div class="RodaPéDiv1e2e3">
+                    <h3>Politica de Privacidade</h3>
+                </div>
+                <div class="RodaPéDiv1e2e3">
+                    <h3>Termos de Serviço</h3>
+                </div>
+                <div class="RodaPéDiv1e2e3">
+                    <h3>Contato</h3>
+                </div>
+                <div class="RodaPéDiv1e2e3">
+                    <h3>Informação do Consumidor</h3>
+                </div>
+                <div class="ImagemUnity">
+                    <p class="txtinf">
+                        © 2025 Higanbana, Higanbana, HIGANBANA e todos os logotipos associados são marcas comerciais,
+                        marcas de serviço e/ou marcas registradas da Higanbana.
+                    </p>
+                </div>
+            </div>
+            <div class="RodaPéDiv4">
+
+            </div>
+        </footer>
+    </div>
 </body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -190,4 +195,3 @@
 <script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
 
 <script src="script.js"></script>
-
