@@ -52,11 +52,11 @@ function IndexPer() {
 
 
 function Personagem(n){
-  window.location.href = "http://127.0.0.1:5500/Landpage/personagem.html?"+n;
+  window.location.href = href+"/personagem"+n;
 }
 
 function Voltar(){
-  window.location.href = "http://127.0.0.1:5500/Landpage/index.html#";
+  window.location.href = href+"/index";
 }
 
 
