@@ -6,10 +6,11 @@ const nome = document.getElementsByClassName("nome-personagem")[0];
 const Historia = document.getElementsByClassName("texto-personagem")[0];
 
 function IndexPer() {
-  const params = new URLSearchParams(window.location.search);
-  const personagemID = href.charAt(href.length - 1);
+   const params = new URLSearchParams(window.location.search)
+   const id = params.get("nome");
 
-  if (!personagemID) return;
+
+  if (!id) return;
 
   const nomeEl = document.getElementsByClassName("nome-personagem")[0];
   const historiaEl = document.getElementsByClassName("texto-personagem")[0];
@@ -17,14 +18,14 @@ function IndexPer() {
 
   if (!nomeEl || !historiaEl || !imageEl) return;
 
-  switch (personagemID) {
-    case "1":
+  switch (id) {
+    case "Thiago":
       nomeEl.innerText = "Thiago José Fritz";
       historiaEl.innerText = "Thiago é o que podemo chamar de CLT médio. nasceu em uma capital. desde criança sempre gostou de entender e desvendar todo tipo de mistério. Essa curiosidade provavelmente foi fruto de conviver com seu pai, que por anos durante a infância de Thiago, foi cientista forense. Entender provas e dados se tornou a paixáo do jovem Fritz. Sua carisma e otimismo vieram de sua mae, uma ótima psiquiatra que sempre o fez enxergar que o copo que está vazio ao menos não vai transbordar. Seus esforços e dedicação formaram seu currículo com dois anos de estágio em um jornal local e formaçdo em jornalismo em uma faculdade bem reconhecida.";
       imageEl.src = "./images/sketch 1-Thiago.png";
       break;
 
-    case "2":
+    case "Jhonatan":
       nomeEl.innerText = "Jhonatan Pinto Da Silva";
       historiaEl.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
       imageEl.src = "./images/sketch 1-Thiago.png";
@@ -48,11 +49,6 @@ function IndexPer() {
       imageEl.src = "./images/sketch 1-Thiago.png";
       break;
   }
-}
-
-
-function Personagem(n){
-  window.location.href = href+"/personagem.hmtl?"+n;
 }
 
 function Voltar(){
