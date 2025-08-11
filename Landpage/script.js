@@ -52,7 +52,7 @@ function IndexPer() {
 
 
 function Personagem(n){
-  window.location.href = href+"/personagem?"+n;
+  window.location.href = href+"/personagem.hmtl?"+n;
 }
 
 function Voltar(){
