@@ -107,3 +107,8 @@ btnPrevPer.addEventListener('click', () => {
   index = (index - 1 + personagens.length) % personagens.length;
   mostrarPersonagem();
 });
+
+function maisLento() {
+  document.getElementById("background-video").playbackRate = 0.5; 
+}
+
