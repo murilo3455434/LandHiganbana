@@ -2,7 +2,26 @@ html {
    scroll-behavior: smooth;
    max-height: 100%;
    max-width: 100%;
+
 }
+/* Para o site inteiro */
+html, body {
+  background-color: #00000000;
+  color-scheme: dark;
+}
+
+/* Bloqueia o ajuste de cor automático do Chrome */
+* {
+    forced-color-adjust: none !important;
+}
+
+/* Seus elementos */
+video, .scrollview, .card {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    forced-color-adjust: none !important;
+}
+
 ::-webkit-scrollbar {
   width: 9px;
   height: 2px;
@@ -457,7 +476,7 @@ html {
 
 /* Imagem */
 .div-imagem {
-  max-height: 80px;
+  max-height: 105px;
   max-width: 100%;
   margin-bottom: 10px;
 }
@@ -465,7 +484,7 @@ html {
 /* Container personagem */
 .personagem-container {
   display: flex;
-  background-color: gainsboro;
+  background-color: rgb(211, 211, 211);
   flex-direction: column;
   flex: 1;
 }
