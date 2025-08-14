@@ -16,9 +16,9 @@ html, body {
 }
 
 /* Seus elementos */
-video, .scrollview, .card {
-    background-color: #1e1e1e !important;
-    color: #ffffff !important;
+.scroll-area, .card {
+    background-color: #00000077 !important;
+    color: #000000 !important;
     forced-color-adjust: none !important;
 }
 
@@ -256,7 +256,7 @@ video, .scrollview, .card {
   object-fit: cover;
   z-index: -1;
   opacity: 0.4;
-   filter: saturate(1.25) contrast(1.12) brightness(1.04);
+   filter: saturate(1.75) contrast(3.12) brightness(1.04);
 }
 
 #logo {
@@ -443,7 +443,7 @@ video, .scrollview, .card {
 }
 
 .text-body {
-  color: rgb(134, 134, 134);
+  color: rgb(27, 27, 27);
 }
 
 /* Botão */
@@ -476,9 +476,11 @@ video, .scrollview, .card {
 
 /* Imagem */
 .div-imagem {
-  max-height: 105px;
+  max-height: 155px;
   max-width: 100%;
   margin-bottom: 10px;
+  width: 780px;
+  height: 132px;
 }
 
 /* Container personagem */
@@ -492,7 +494,7 @@ video, .scrollview, .card {
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
   .card {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 
