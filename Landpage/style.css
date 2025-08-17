@@ -4,22 +4,11 @@ html {
    max-width: 100%;
 
 }
-/* Para o site inteiro */
-html, body {
-  background-color: #00000000;
-  color-scheme: dark;
-}
-
-/* Bloqueia o ajuste de cor automático do Chrome */
-* {
-    forced-color-adjust: none !important;
-}
-
-/* Seus elementos */
-.scroll-area, .card {
-    background-color: #00000077 !important;
-    color: #000000 !important;
-    forced-color-adjust: none !important;
+.div-suprema{
+  background-color: #181818;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 ::-webkit-scrollbar {
@@ -30,13 +19,84 @@ html, body {
 
 ::-webkit-scrollbar-track {
   width: 100px;
-  background-color: transparent;
+  background-color:#181818;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ff000052;
+  background-color: #640000;
+  
   border-radius: 10px;
   
 }
+
+#Higanbana-Letra {
+ font-family: Special Elite;
+ font-size: 16pt;
+}
+
+.Higanbana-titulo {
+  padding: 1rem;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Special Elite;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.Higanbana-titulo {
+  --primary-color: #ffffff;
+  --hovered-color: #b80c0c;
+  position: relative;
+  display: flex;
+  font-weight: 550;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.Higanbana-titulo p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.Higanbana-titulo::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -0px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.2s ease-out;
+}
+
+.Higanbana-titulo p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "HIGANBANA";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.2s ease-out;
+  height: auto;
+  font-family: Special Elite;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.Higanbana-titulo:hover::after {
+  width: 100%;
+}
+
+.Higanbana-titulo:hover p::before {
+  width: 100%;
+}
+
+
 #link-topo{
   text-decoration: none;
   color: white;
@@ -47,6 +107,7 @@ html, body {
   bottom: 10px;
   box-shadow: 3px 3px 10px #333;
 }
+
 .botoes-Inicio {
   padding: 1rem;
   margin: 0;
@@ -237,26 +298,28 @@ html, body {
 }
 
 #div-home {
-  height: 600px;
-  max-width: 100%;
-  width: 100%;
+  height: 800px;
+  max-width: 5000px;
+  width: 2540px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 #background-video {
-  position: fixed;
+  
   top: 0;
   left: 0;
-  max-width: 100%;
-  width: 100%;
-  max-height: 700px;
-  height: 700px;
+  max-width: 5000px;
+  width: 2540px;
+  max-height: 800px;
+  height: 780px;
   object-fit: cover;
-  z-index: -1;
+  z-index: -0;
   opacity: 0.4;
-   filter: saturate(1.75) contrast(3.12) brightness(1.04);
+   filter: saturate(1.55) contrast(1.45) brightness(1.40);
+  
 }
 
 #logo {
@@ -308,7 +371,7 @@ html, body {
 }
 
 #div-vilarejo {
-  height: 600px;
+  height: 900px;
   background-color: #151515;
   display: flex;
   align-items: center;
@@ -318,7 +381,7 @@ html, body {
 
 #div-introduçao {
   
-  height: 700px;
+  height: 900px;
   background-color: #151515;
   display: flex;
   align-items: center;
@@ -489,6 +552,7 @@ html, body {
   background-color: rgb(211, 211, 211);
   flex-direction: column;
   flex: 1;
+  height: 900px;
 }
 
 /* RESPONSIVIDADE */
@@ -586,9 +650,9 @@ html, body {
 }
 
 .RodaPé {
-  background-color: #a30000;
+  background-color: #640000;
   color: #fff;
-  padding: 40px 20px;
+  padding: 20px 80px 30px 80px;
   font-family: Special Elite;
 }
 
