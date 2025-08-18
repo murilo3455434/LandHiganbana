@@ -23,30 +23,41 @@ html {
 }
 ::-webkit-scrollbar-thumb {
   background-color: #640000;
-  
   border-radius: 10px;
   
 }
 
 #Higanbana-Letra {
  font-family: Special Elite;
- font-size: 16pt;
+ font-size: 20pt;
+}
+
+.navbar {
+  height: 95px;
+}
+
+
+#logo {
+  margin-left: 7%;
+  width: 90px;
+  height: 85px;
+  padding: 5px 7px 5px 5px;
+  margin-top: 50px;
 }
 
 .Higanbana-titulo {
   padding: 1rem;
-  margin: 0;
+  margin-left: 10px;
   border: none;
   background: none;
-  cursor: pointer;
   font-family: Special Elite;
-  font-size: 15pt;
+  font-size: 20pt;
   text-decoration: none;
 }
 
 .Higanbana-titulo {
   --primary-color: #ffffff;
-  --hovered-color: #b80c0c;
+  --hovered-color: #a30000;
   position: relative;
   display: flex;
   font-weight: 550;
@@ -55,28 +66,20 @@ html {
   align-items: center;
 }
 
-.Higanbana-titulo p {
+.Higanbana-titulo a {
   margin: 0;
+  cursor: pointer;
   position: relative;
   font-size: 20px;
   color: var(--primary-color);
 }
 
-.Higanbana-titulo::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  left: 0;
-  bottom: -0px;
-  background: var(--hovered-color);
-  height: 2px;
-  transition: 0.2s ease-out;
-}
 
-.Higanbana-titulo p::before {
+
+.Higanbana-titulo a::before {
   position: absolute;
   /*   box-sizing: border-box; */
-  content: "HIGANBANA";
+  content: "Higanbana";
   width: 0%;
   inset: 0;
   color: var(--hovered-color);
@@ -84,15 +87,11 @@ html {
   transition: 0.2s ease-out;
   height: auto;
   font-family: Special Elite;
-  font-size: 15pt;
+  font-size: 20pt;
   text-decoration: none;
 }
 
-.Higanbana-titulo:hover::after {
-  width: 100%;
-}
-
-.Higanbana-titulo:hover p::before {
+.Higanbana-titulo:hover a::before {
   width: 100%;
 }
 
@@ -322,9 +321,6 @@ html {
   
 }
 
-#logo {
-  margin-left: 5%;
-}
 
 #titulo {
   font-family: Special Elite;
@@ -391,7 +387,7 @@ html {
 
 
 #div-texto {
-  width: 500px;
+  width: 700px;
   margin: 0 0 0 20px;
 }
 
@@ -403,7 +399,7 @@ html {
 
 .container-slider {
   display: flex;
-  width: 700px;
+  width: 800px;
   min-height: 100vh;
   align-items: center;
   margin: 0 20px 0 0;
@@ -416,14 +412,15 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 700px;
+  width: 800px;
 }
 
 .slider {
   opacity: 0;
   transition: opacity 0.2s;
   position: absolute;
-  width: 100%;
+  width: 800px;
+  height: 400px;
   border-radius: 10px;
 }
 
