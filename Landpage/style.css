@@ -180,6 +180,109 @@ html {
   font-size: 15pt;
   text-decoration: none;
 }
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  overflow: hidden;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;       /* rolagem horizontal */
+  overflow-y: hidden;
+  padding: 12px;
+  scroll-behavior: smooth; /* rolagem suave */
+  -webkit-overflow-scrolling: touch; /* iOS */
+  user-select: none;
+}
+.carousel-container::-webkit-scrollbar {
+  height: 16px; 
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: #333; 
+  border-radius: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #007bff; 
+  border-radius: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; 
+}
+
+
+.carousel-container {
+  scrollbar-width: auto; 
+  scrollbar-color: #f30000 #181818; 
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-personagem {
+  min-width: calc(100% / 3); /* 3 cards visíveis */
+  height: 460px;
+  margin: 0 10px;
+  background: #151515;
+  border: 3px solid #a30000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-personagem:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(163, 0, 0, 0.6);
+}
+
+.card-img {
+  width: 100%;
+  height: 65%;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 12px;
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+  color: white;
+}
+.nome-personagem {
+  font-size: 20px;
+  color: #ff4d4d;
+  margin-bottom: 8px;
+}
+.descricao-personagem {
+  font-size: 13px;
+  color: #cfcfcf;
+}
+
+/* Botões */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
 
 .botoes-Inicio2 {
   --primary-color: #ffffff;

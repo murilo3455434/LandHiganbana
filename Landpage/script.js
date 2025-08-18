@@ -5,55 +5,7 @@ const href = window.location.href;
 const nome = document.getElementsByClassName("nome-personagem")[0];
 const Historia = document.getElementsByClassName("texto-personagem")[0];
 
-function IndexPer() {
-   const params = new URLSearchParams(window.location.search)
-   const id = params.get("nome");
 
-
-  if (!id) return;
-
-  const nomeEl = document.getElementsByClassName("nome-personagem")[0];
-  const historiaEl = document.getElementsByClassName("texto-personagem")[0];
-  const imageEl = document.getElementById("Imageper");
-
-  if (!nomeEl || !historiaEl || !imageEl) return;
-
-  switch (id) {
-    case "Thiago":
-      nomeEl.innerText = "Thiago José Fritz";
-      historiaEl.innerText = "Thiago é o que podemo chamar de CLT médio. nasceu em uma capital. desde criança sempre gostou de entender e desvendar todo tipo de mistério. Essa curiosidade provavelmente foi fruto de conviver com seu pai, que por anos durante a infância de Thiago, foi cientista forense. Entender provas e dados se tornou a paixáo do jovem Fritz. Sua carisma e otimismo vieram de sua mae, uma ótima psiquiatra que sempre o fez enxergar que o copo que está vazio ao menos não vai transbordar. Seus esforços e dedicação formaram seu currículo com dois anos de estágio em um jornal local e formaçdo em jornalismo em uma faculdade bem reconhecida.";
-      imageEl.src = "./images/Thiago (Padrão) 1.png";
-      break;
-
-    case "Jhonatan":
-      nomeEl.innerText = "Jhonatan Pinto Da Silva";
-      historiaEl.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-      imageEl.src = "./images/Fortinho.png";
-      break;
-
-    case "Personagem3":
-      nomeEl.innerText = "Personagem3";
-      historiaEl.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-      imageEl.src = "./images/Mulher.png";
-      break;
-
-    case "Personagem4":
-      nomeEl.innerText = "Personagem4";
-      historiaEl.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-      imageEl.src = "./images/Gordinho.png";
-      break;
-
-    case "Personagem5":
-      nomeEl.innerText = "Personagem5";
-      historiaEl.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-      imageEl.src = "./images/Mulher.png";
-      break;
-  }
-}
-
-function Voltar(){
-  window.location.href = window.location.href='index.html';
-}
 
 
 let currentSlide = 0;
@@ -112,3 +64,34 @@ function maisLento() {
   document.getElementById("background-video").playbackRate = 0.5; 
 }
 
+const slider22 = document.getElementsByClassName("carousel-container");
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider2.addEventListener("mousedown", (e) => {
+  isDown = true;
+  slider2.classList.add("active");
+  startX = e.pageX - slider2.offsetLeft;
+  scrollLeft = slider2.scrollLeft;
+  slider2.style.cursor = "grabbing";
+});
+
+slider2.addEventListener("mouseleave", () => {
+  isDown = false;
+  slider2.style.cursor = "grab";
+});
+
+slider2.addEventListener("mouseup", () => {
+  isDown = false;
+  slider2.style.cursor = "grab";
+});
+
+slider2.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider2.offsetLeft;
+  const walk = (x - startX) * 2; // velocidade do arrasto
+  slider2.scrollLeft = scrollLeft - walk;
+});
