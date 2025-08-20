@@ -185,7 +185,7 @@ html {
 
 .carousel-container {
   scrollbar-width: auto; 
-  scrollbar-color: #f30000 #181818; 
+  scrollbar-color: #535252 #181818; 
 }
 
 .carousel-track {
@@ -196,9 +196,10 @@ html {
 .card-personagem {
   min-width: calc(100% / 4); /* 3 cards visíveis */
   height: 560px;
+  width: 250px;
   margin: 0 10px;
   background: #151515;
-  border: 3px solid #a30000;
+  border: 3px solid #8d0000;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
@@ -209,12 +210,12 @@ html {
 
 .card-personagem:hover {
   transform: translateY(-8px);
-  box-shadow: 0 6px 25px rgba(163, 0, 0, 0.6);
+  box-shadow: 0 6px 25px rgb(97, 0, 0);
 }
 
 .card-img {
   width: 100%;
-  height: 50%;
+  height: 300px;
 }
 .card-img img {
   width: 100%;
@@ -230,7 +231,7 @@ html {
 }
 .nome-personagem {
   font-size: 20pt;
-  color: #ff4d4d;
+  color: #fc3939;
   margin-bottom: 8px;
 }
 .descricao-personagem {
