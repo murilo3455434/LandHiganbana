@@ -29,7 +29,7 @@ html {
 
 #Higanbana-Letra {
  font-family: Special Elite;
- font-size: 20pt;
+ font-size: 26pt;
 }
 
 .navbar {
@@ -40,9 +40,9 @@ html {
 #logo {
   margin-left: 7%;
   width: 90px;
-  height: 85px;
-  padding: 5px 7px 5px 5px;
-  margin-top: 50px;
+  height: 80px;
+  padding: 10px 7px 5px 5px;
+  
 }
 
 .Higanbana-titulo {
@@ -51,17 +51,16 @@ html {
   border: none;
   background: none;
   font-family: Special Elite;
-  font-size: 20pt;
+  font-size: 26pt;
   text-decoration: none;
 }
 
 .Higanbana-titulo {
   --primary-color: #ffffff;
-  --hovered-color: #a30000;
   position: relative;
   display: flex;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 27px;
   gap: 0.5rem;
   align-items: center;
 }
@@ -70,29 +69,8 @@ html {
   margin: 0;
   cursor: pointer;
   position: relative;
-  font-size: 20px;
+  font-size: 27px;
   color: var(--primary-color);
-}
-
-
-
-.Higanbana-titulo a::before {
-  position: absolute;
-  /*   box-sizing: border-box; */
-  content: "Higanbana";
-  width: 0%;
-  inset: 0;
-  color: var(--hovered-color);
-  overflow: hidden;
-  transition: 0.2s ease-out;
-  height: auto;
-  font-family: Special Elite;
-  font-size: 20pt;
-  text-decoration: none;
-}
-
-.Higanbana-titulo:hover a::before {
-  width: 100%;
 }
 
 
@@ -105,7 +83,9 @@ html {
   right: 10px;
   bottom: 10px;
   box-shadow: 3px 3px 10px #333;
+  z-index: +1;
 }
+
 
 .botoes-Inicio {
   padding: 1rem;
@@ -114,7 +94,7 @@ html {
   background: none;
   cursor: pointer;
   font-family: Special Elite;
-  font-size: 15pt;
+  font-size: 22pt;
   text-decoration: none;
 }
 
@@ -124,7 +104,7 @@ html {
   position: relative;
   display: flex;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 22px;
   gap: 0.5rem;
   align-items: center;
 }
@@ -132,7 +112,7 @@ html {
 .botoes-Inicio a {
   margin: 0;
   position: relative;
-  font-size: 20px;
+  font-size: 22px;
   color: var(--primary-color);
 }
 
@@ -158,7 +138,7 @@ html {
   transition: 0.2s ease-out;
   height: auto;
   font-family: Special Elite;
-  font-size: 15pt;
+  font-size: 22px;
   text-decoration: none;
 }
 
@@ -170,16 +150,7 @@ html {
   width: 100%;
 }
 
-.botoes-Inicio2 {
-  padding: 1rem;
-  margin: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-family: Special Elite;
-  font-size: 15pt;
-  text-decoration: none;
-}
+
 .carousel-container {
   position: relative;
   width: 100%;
@@ -283,6 +254,16 @@ html {
   border-radius: 50%;
 }
 
+.botoes-Inicio2 {
+  padding: 1rem;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: Special Elite;
+  font-size: 22px;
+  text-decoration: none;
+}
 
 .botoes-Inicio2 {
   --primary-color: #ffffff;
@@ -290,7 +271,7 @@ html {
   position: relative;
   display: flex;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 22px;
   gap: 0.5rem;
   align-items: center;
 }
@@ -298,7 +279,7 @@ html {
 .botoes-Inicio2 a {
   margin: 0;
   position: relative;
-  font-size: 20px;
+  font-size: 22px;
   color: var(--primary-color);
 }
 
@@ -324,7 +305,7 @@ html {
   transition: 0.2s ease-out;
   height: auto;
   font-family: Special Elite;
-  font-size: 15pt;
+  font-size: 22px;
   text-decoration: none;
 }
 
@@ -343,7 +324,7 @@ html {
   background: none;
   cursor: pointer;
   font-family: Special Elite;
-  font-size: 15pt;
+  font-size: 22px;
   text-decoration: none;
 }
 
@@ -353,7 +334,7 @@ html {
   position: relative;
   display: flex;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 22px;
   gap: 0.5rem;
   align-items: center;
 }
@@ -361,7 +342,7 @@ html {
 .botoes-Inicio3 a {
   margin: 0;
   position: relative;
-  font-size: 20px;
+  font-size: 22px;
   color: var(--primary-color);
 }
 
@@ -387,7 +368,7 @@ html {
   transition: 0.2s ease-out;
   height: auto;
   font-family: Special Elite;
-  font-size: 15pt;
+  font-size: 22px;
   text-decoration: none;
 }
 
@@ -480,7 +461,7 @@ html {
 
 #div-introduçao {
   
-  height: 900px;
+  height: 850px;
   background-color: #151515;
   display: flex;
   align-items: center;
@@ -494,10 +475,19 @@ html {
   margin: 0 0 0 20px;
 }
 
+#titulo2 {
+  font-family: Special Elite;
+  font-size: 32pt;
+  color: white;
+  
+}
+
 #texto-introduçao {
   color: white;
   font-family: Special Elite;
-  font-size: 15pt;
+  font-size: 16pt;
+  margin-bottom: 7%;
+  margin-top: 5px;
 }
 
 .container-slider {
@@ -778,11 +768,7 @@ h3 {
   text-align: center;
 }
 
-#titulo2 {
-  font-family: Special Elite;
-  font-size: 30pt;
-  color: white;
-}
+
 
 .botoes-Voltar {
   padding: 1rem;
