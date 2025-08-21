@@ -18,15 +18,39 @@ function showSlider() {
   slider[currentSlide].classList.add('on');
 }
 
+
+function textMudar() {
+  texto = document.getElementById('texto-introduçao');
+  titulo = document.getElementById('titulo2');
+
+  if (currentSlide == 0) {
+    texto.innerHTML = "Higanbana é um jogo de investigação e suspense, ambientado em um vilarejo distante da cidade nos anos 2000. O jogo conta a história de um jornalista investigativo que busca uma história que decidirá o futuro de sua carreira. O jogo tem um objetivo não apenas de entreter o jogador, mas também apresentar uma moral final e críticas, como por exemplo sobre a insalubridade de algumas cidades e vilarejos no Brasil, muitas vezes causada pela falta de atenção dos governos. Além disso, em muitas empresas vemos trabalhadores cumprindo papéis que não tem a competência necessária, isso provoca desconforto e dependendo do serviço, risco a vida do trabalhador."
+    titulo.innerHTML = 'História'
+  } else if (currentSlide == 1) {
+    texto.innerHTML = "Higanbana é um jogo de investigação e suspense, ambientado em um vilarejo distante da cidade nos anos 2000. O jogo conta a história de um jornalista investigativo que busca uma história que decidirá o futuro de sua carreira. O jogo tem um objetivo não apenas de entreter o jogador, mas também apresentar uma moral final e críticas, como por exemplo sobre a insalubridade de algumas cidades e vilarejos no Brasil, muitas vezes causada pela falta de atenção dos governos. Além disso, em muitas empresas vemos trabalhadores cumprindo papéis que não tem a competência necessária, isso provoca desconforto e dependendo do serviço, risco a vida do trabalhador."
+    titulo.innerHTML = 'História'
+  }
+  else if (currentSlide == 2) {
+    console.log('Segundo slide');
+    texto.innerHTML = "A flor de Higanbana chegou ao Brasil nos anos 60 com o político japonês Kanji Aketozaki, que apoiou Manuel Severino em seu sonho de erguer um vilarejo. A planta se espalhou e deu nome ao lugar. Em 1977, o vilarejo Higanbana foi oficialmente reconhecido pelo IBGE."
+    titulo.innerHTML = 'Flor'
+  }
+
+  console.log(currentSlide);
+}
+
 function nextSlider() {
   hideSlider();
   currentSlide = (currentSlide + 1) % slider.length;
+  textMudar();
   showSlider();
+
 }
 
 function prevSlider() {
   hideSlider();
   currentSlide = (currentSlide - 1 + slider.length) % slider.length;
+  textMudar();
   showSlider();
 }
 
