@@ -16,7 +16,6 @@ html {
   height: 2px;
 }
 
-
 ::-webkit-scrollbar-track {
   width: 100px;
   background-color:#181818;
@@ -451,8 +450,8 @@ html {
 }
 
 #div-vilarejo {
-  height: 900px;
-  background-color: #151515;
+  height: 700px;
+  background-color: #202020;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -61,7 +61,7 @@ btnPrevPer.addEventListener('click', () => {
 });
 
 function maisLento() {
-  document.getElementById("background-video").playbackRate = 0.5; 
+  document.getElementById("background-video").playbackRate = 0.3; 
 }
 
 const slider22 = document.getElementsByClassName("carousel-container");
@@ -76,7 +76,7 @@ slider2.addEventListener("mousedown", (e) => {
   startX = e.pageX - slider2.offsetLeft;
   scrollLeft = slider2.scrollLeft;
   slider2.style.cursor = "grabbing";
-});
+}); 
 
 slider2.addEventListener("mouseleave", () => {
   isDown = false;
