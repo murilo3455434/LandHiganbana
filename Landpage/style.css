@@ -129,7 +129,7 @@ html {
 .botoes-Inicio a::before {
   position: absolute;
   /*   box-sizing: border-box; */
-  content: "Introdução";
+  content: "História";
   width: 0%;
   inset: 0;
   color: var(--hovered-color);
@@ -156,11 +156,11 @@ html {
   overflow: hidden;
   display: flex;
   gap: 12px;
-  overflow-x: auto;       /* rolagem horizontal */
+  overflow-x: auto;
   overflow-y: hidden;
-  padding: 12px;
-  scroll-behavior: smooth; /* rolagem suave */
-  -webkit-overflow-scrolling: touch; /* iOS */
+  padding: 12px 0 0 50px;
+  scroll-behavior: smooth; 
+  -webkit-overflow-scrolling: touch; 
   user-select: none;
 }
 .carousel-container::-webkit-scrollbar {
@@ -190,6 +190,7 @@ html {
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  align-items: center;
 }
 
 .card-personagem {
@@ -205,6 +206,7 @@ html {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s, box-shadow 0.3s;
+
 }
 
 .card-personagem:hover {
