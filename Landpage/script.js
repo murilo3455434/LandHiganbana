@@ -32,8 +32,8 @@ function textMudar() {
   }
   else if (currentSlide == 2) {
     console.log('Segundo slide');
-    texto.innerHTML = "A flor de Higanbana chegou ao Brasil nos anos 60 com o político japonês Kanji Aketozaki, que apoiou Manuel Severino em seu sonho de erguer um vilarejo. A planta se espalhou e deu nome ao lugar. Em 1977, o vilarejo Higanbana foi oficialmente reconhecido pelo IBGE."
-    titulo.innerHTML = 'Flor'
+    texto.innerHTML = "A flor de Higanbana chegou ao Brasil nos anos de 1960 com o político japonês Kanji Aketozaki, que apoiou seu amigo Manuel Severino em seu grande sonho de erguer um pequeno vilarejo. A planta se espalhou com o passar dos tempos, e atraves de uma conversa entre Manuel e Kanji, Manuel deu o nome Higanbana ao vilarejo. Em 1977 o seu sonho se tornou real, e a partir desta data o vilarejo Higanbana foi oficialmente reconhecido pelo IBGE."
+    titulo.innerHTML = 'Historia da Flor'
   }
 
   console.log(currentSlide);
